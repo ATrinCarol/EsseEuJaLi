@@ -3,5 +3,5 @@
 ### IntelliJ IDEA ###
 .idea/
 out/production/EsseEuJaLi/
-EsseEuJaLi.iml
+*.iml
 
