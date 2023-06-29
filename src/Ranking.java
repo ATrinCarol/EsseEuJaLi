@@ -1,8 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Ranking {
 
-    private Integer position;
-
-    public void exibirRanking(){
-
-    }
 }

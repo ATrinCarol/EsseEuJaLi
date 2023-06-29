@@ -56,33 +56,43 @@ public class Main {
         switch (codigo) {
             case 1:
                 System.out.println(livro1.exibirLivro());
+                user1.acrescentarPonto(2);
                 break;
             case 2:
                 System.out.println(livro2.exibirLivro());
+                user1.acrescentarPonto(2);
                 break;
             case 3:
                 System.out.println(livro3.exibirLivro());
+                user1.acrescentarPonto(4);
                 break;
             case 4:
                 System.out.println(livro4.exibirLivro());
+                user1.acrescentarPonto(2);
                 break;
             case 5:
                 System.out.println(livro5.exibirLivro());
+                user1.acrescentarPonto(1);
                 break;
             case 6:
                 System.out.println(livro6.exibirLivro());
+                user1.acrescentarPonto(2);
                 break;
             case 7:
                 System.out.println(livro7.exibirLivro());
+                user1.acrescentarPonto(2);
                 break;
             case 8:
                 System.out.println(livro8.exibirLivro());
+                user1.acrescentarPonto(7);
                 break;
             case 9:
                 System.out.println(livro9.exibirLivro());
+                user1.acrescentarPonto(1);
                 break;
             case 10:
                 System.out.println(livro10.exibirLivro());
+                user1.acrescentarPonto(3);
                 break;
         }
 
@@ -91,43 +101,14 @@ public class Main {
         System.out.println("0 -- Não");
         int confirma = sc.nextInt();
         if (confirma == 1) {
-            user1.acrescentaPonto(1);
+            user1.acrescentarPonto(1);
+
             System.out.println("Seus pontos são: " + user1.getScore());
         }
 
-        for (Books livro : leituras) {
-            if (livro.getPages() >= 100 && livro.getPages() < 200) {
-                user1.acrescentaPonto(1);
-                break;
-            } if (livro.getPages() >= 200 && livro.getPages() < 300) {
-                user1.acrescentaPonto(2);
-                break;
-            } if (livro.getPages() >= 300 && livro.getPages() < 400) {
-                user1.acrescentaPonto(3);
-                break;
-            } if (livro.getPages() >= 400 && livro.getPages() < 500) {
-                user1.acrescentaPonto(4);
-                break;
-            } if (livro.getPages() >= 500 && livro.getPages() < 600) {
-                user1.acrescentaPonto(5);
-                break;
-            } if (livro.getPages() >= 600 && livro.getPages() < 700) {
-                user1.acrescentaPonto(6);
-                break;
-            } if (livro.getPages() >= 700 && livro.getPages() < 800) {
-                user1.acrescentaPonto(7);
-                break;
-            } if (livro.getPages() >= 800 && livro.getPages() < 900) {
-                user1.acrescentaPonto(8);
-                break;
-            } if (livro.getPages() >= 900 && livro.getPages() < 1000) {
-                user1.acrescentaPonto(9);
-                break;
-            } if (livro.getPages() >= 1000) {
-                user1.acrescentaPonto(10);
-                break;
-            }
-        }
-        System.out.println("Pontos atualizados: " + user1.getScore());
+        //A fazer
+        //armazenamento e visualizados dos troféus e pontos
+        // criação e visualização dos rankings com os 10 usuários com maior pontuação
+
     }
 }

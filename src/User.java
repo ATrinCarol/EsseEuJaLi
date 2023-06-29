@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class User {
 
     private String name;
@@ -12,14 +14,15 @@ public class User {
         this.password = password;
     }
 
-    public void acrescentaPonto(Integer ponto){
-        this.score = score+ponto;
+    public void acrescentarPonto(Integer ponto) {
+        this.score = score + ponto;
     }
+
     public Integer getScore() {
         return score;
     }
 
-    public void acrescentaPonto(){
+    public void setScore(Integer score) {
         this.score = score;
     }
 
@@ -27,7 +30,7 @@ public class User {
         return trophy;
     }
 
-    public void setTrophy(){
+    public void setTrophy() {
         this.trophy = trophy;
     }
 
